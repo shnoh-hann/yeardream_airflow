@@ -78,10 +78,10 @@ x-airflow-common:
     # If you want to use it, outcomment it and replace airflow.cfg with the name of your config file
     # AIRFLOW_CONFIG: '/opt/airflow/config/airflow.cfg'
   volumes:
-    - /home/ubuntu/yeardream_airflow/dags:/opt/airflow/dags
-    - /home/ubuntu/logs:/opt/airflow/logs
-    - /home/ubuntu/config:/opt/airflow/config
-    - /home/ubuntu/yeardream_airflow/plugins:/opt/airflow/plugins
+    - /home/hann/workspace/yeardream_airflow/dags:/opt/airflow/dags
+    - /home/hann/workspace/yeardream_airflow/logs:/opt/airflow/logs
+    - /home/hann/workspace/yeardream_airflow/config:/opt/airflow/config
+    - /home/hann/workspace/yeardream_airflow/plugins:/opt/airflow/plugins
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     &airflow-common-depends-on
