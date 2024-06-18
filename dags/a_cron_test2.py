@@ -4,7 +4,7 @@ from airflow.operators.empty import EmptyOperator
 
 with DAG(
         dag_id="cron_test2",
-        schedule="10/15,* * * *",
+        schedule="10/15 * * * *",
         start_date=pendulum.datetime(2024, 6, 14, tz="Asia/Seoul"),
         catchup=False
 ) as dag:
