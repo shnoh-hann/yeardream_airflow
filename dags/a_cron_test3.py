@@ -3,7 +3,7 @@ import pendulum
 from airflow.operators.empty import EmptyOperator
 
 with DAG(
-        dag_id="dags_conn_test1",
+        dag_id="cron test3",
         schedule="10-59/15,* * * *",
         start_date=pendulum.datetime(2024, 6, 14, tz="Asia/Seoul"),
         catchup=False
